@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 200" width="1000" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a90e2" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4a90e2" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4a90e2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <path id="wave"
+        fill="none"
+        stroke="url(#glow)"
+        stroke-width="2">
+    <animate attributeName="d"
+             dur="2s"
+             repeatCount="indefinite"
+             values="
+               M0,100 Q50,60 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100 T900,100 T1000,100;
+               M0,100 Q50,140 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100 T900,100 T1000,100;
+               M0,100 Q50,60 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100 T900,100 T1000,100
+             " />
+  </path>
+</svg>
